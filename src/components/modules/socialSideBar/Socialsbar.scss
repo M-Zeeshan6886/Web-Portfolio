@@ -1,0 +1,85 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.sidebar-container-left {
+  position: absolute;
+  bottom: 1rem;
+  left: 2%;
+  height: 50vh;
+  z-index: 9999999999;
+  &-content {
+    position: fixed;
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.sidebar-container-right {
+  position: absolute;
+  bottom: 0rem;
+  right: 8%;
+  height: 45vh;
+  //   background-color: aqua;
+  z-index: 9999999999;
+  &-content {
+    height: 45vh;
+    position: fixed;
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    & > p {
+      //   position: fixed;
+      font-family: "SF Mono";
+      font-weight: 400;
+      font-size: 1.6rem;
+      color: #1e1e1e;
+      //   margin-bottom: -3rem;
+      transform: rotate(90deg);
+      cursor: pointer;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}
+
+.line {
+  //   position: fixed;
+  margin-top: 30px;
+  width: 1px;
+  height: 30vh;
+}
+.git {
+  //   margin-top: 30px;
+  //   position: fixed;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  &:hover {
+    color: $blue;
+  }
+}
+.linkedin {
+  //   position: fixed;
+  margin-top: 20px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  &:hover {
+    color: $blue;
+  }
+}
+.twiter {
+  //   position: fixed;
+  margin-top: 30px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  &:hover {
+    color: $blue;
+  }
+}
